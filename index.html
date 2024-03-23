@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="content/css/style.css">
+    <link rel="stylesheet" href="content/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.css" integrity="sha512-QfIHmk801WHltfFladAvS+dCN5LtI5Aco+OhtYzaAtmt/JWm2YiXwNL24wKs41XSrK2r0UTqmJ9RgbdKDpWhYQ==" crossorigin="anonymous">
+    <title>Weather App</title>
+    <script src= 
+    "https://cdn.jsdelivr.net/npm/moment@2.29.3/moment.min.js"> 
+    </script> 
+</head>
+<body>
+    <div class="loader"><img src="content/image/R.gif" alt="" srcset="">
+    <p class="loading_title">Collecting data from the server</p>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="left_section">
+                <div class="left_seaction_header">
+                    <div class="left_header_title">
+                        <div class="header_time_wrapper">
+                            <h2 class="header_time">
+                                07:32 AM
+                            </h2>
+                            <p class="header_date">Wednesday, 14 April, 2024</p>
+                        </div>
+                        <div class="header_welcome_wrapper">
+                            <i class='bx bx-sun'></i>
+                            Good morning, Soheil!
+                        </div>
+                    </div>
+                    <div class="left_header_toggle">
+                        <div class="toggle_theme_wrapper">
+                            <div class="btn_theme"></div>
+                            <i class='bx bx-sun'></i>
+                            <i class='bx bx-moon'></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="left_section_content ">
+                    <div class="week_card_wrapper">
+                        <!-- <div class="week_card">
+                            <img src="content/image/sun.png" alt="">
+                            <p class="dayName">Sun</p>
+                            <p class="day_temp">29</p>
+                            <p class="temp_des">clear</p>
+                        </div> -->
+                    </div>
+                    <div class="left_section_bottom">
+                    <div class="sunset_sunrise_container">
+                        <div class="sunset_sunrise_content">
+                            <div class="sunset_sunrise_titleWrapper">
+                                <p>Sunrise Sunset</p>
+                            </div>
+                            <div class="current_city_sunset">
+                                <div class="current_city_sunsetTitle">
+                                    <span>
+                                        <i class="bx bx-map"></i>
+                                        <p>Londan</p>
+                                    </span>
+                                    <i class='bx bx-dots-vertical'></i>
+                                </div>
+                                <div class="sunset_sunrise_details">
+                                    <div class="sunrise_wrapper">
+                                        <i class="bx bx-sun"></i>
+                                        <span>
+                                            <p>Sunrise</p>
+                                            <p class="currentCity_sunrise_time">4:40 Am</p>
+                                        </span>
+                                    </div>
+                                    <div class="sunrise_wrapper">
+                                        <i class="bx bx-moon"></i>
+                                        <span>
+                                            <p>Sunset</p>
+                                            <p class="currentCity_sunset_time">4:40 Am</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="other_city_wrapper">
+                                <div class="first_city_status city_status">
+                                    <span class="city_name_wrapper first_cityName_span">
+                                        <i class="bx bx-map"></i>
+                                        <p class="city first_city_name" id="city_Name1">Kabul</p>
+                                    </span>
+                                    <span class="other_city_sunrise first_city_sunriseTime">
+                                        <i class="bx bx-sun"></i>
+                                        <p>5:00 Am</p>
+                                    </span>
+                                    <span class="other_city_sunset first_city_sunsetTime">
+                                        <i class="bx bx-moon"></i>
+                                        <p>7:00 PM</p>
+                                    </span>
+                                </div>
+                                <div class="second_city_status city_status">
+                                    <span class="city_name_wrapper second_cityName_span">
+                                        <i class="bx bx-map"></i>
+                                        <p class="city second_city_name" id="city_Name2">Tehran</p>
+                                    </span>
+                                    <span class="other_city_sunrise second_city_sunriseTime">
+                                        <i class="bx bx-sun"></i>
+                                        <p>5:00 Am</p>
+                                    </span>
+                                    <span class="other_city_sunset second_city_sunsetTime">
+                                        <i class="bx bx-moon"></i>
+                                        <p>7:00 PM</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="airQuality_container">
+                        <div class="airQuality_content">
+                            <div class="airQuality_titleWrapper">
+                                <p>Hourly Temperature</p>
+                                <span>
+                                    <i class="bx bx-map"></i>
+                                    <p class="hourlyTemp_cityName">Londan</p>
+                                </span>
+                            </div>
+                            <div class="airQuality_status_wrapper">
+                                <div class="airQuality_status">
+                                    <img src="" alt="" class="hourly_currentTemp_img">
+                                    <p class="today_temp_des">A perfect day for a walk!</p>
+                                </div>
+                                <button class="airQuality_btn_refresh">Refresh</button>
+                            </div>
+                            <div class="airQuality_details">
+                                <!-- <div class="hourly_card">
+                                    <img src="content/image/sun.png" alt="">
+                                    <p class="dayName">09:00 AM</p>
+                                    <p class="day_temp">29</p>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="right_section">
+                <div class="right_header">
+                    <div class="header_search_wrapper">
+                        <i class='bx bx-search header_search_icon' ></i>
+                        <input type="text" class="header_search" placeholder="Search for a city">
+                    </div>
+                    <div class="header_prof">
+                        <i class='bx bx-bell header_notification' ></i>
+                        <img src="content/image/profile.webp" class="header_img" alt="">
+                    </div>
+                </div>
+                <div class="right_content">
+                    <div class="right_main_content">
+                        <div class="weather_main_card"> 
+                            <span class="current_cityName_title">
+                                <i class="bx bx-map"></i>
+                                <p class="current_city_name">,</p>
+                                <p class="current_country_name"> IR</p>
+                            </span>
+                            <img src="content/image/lighting.png" alt="" class="weather_img">
+                            <p class="date_today">Today, 14 April</p>
+                           <span class="today_temp_wrapper">
+                            <p class="today_temp">29°</p>
+                            <p class="today_weather">Sunny</p>
+                           </span>
+                            <div class="more_details_weather">
+                                <span class="weather_status">
+                                    <i class='bx bx-wind'></i>
+                                    <p>Wind</p>
+                                </span>
+                                   <p class="current_wind_status">19km/h</p>
+                            </div>
+                            <div class="more_details_weather">
+                                <div class="weather_status">
+                                    <i class='bx bx-droplet'></i>
+                                    <p>Hum</p>
+                                </div>
+                                   <p class="current_hum_status">10%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right_footer_wrapper">
+                    <div class="city1_card_wrapper city_card_wrapper">
+                        <div class="city1_weatherStatus_wrapper city_weatherStatus_wrapper">
+                            <div class="city1_cityName_wrapper city_cityName_wrapper"">
+                                <i class="bx bx-map"></i>
+                                <select name="City" id="city1_list" class="city_list">
+                                    <option value="Rome" class="city1_item">Rome</option>
+                                    <option value="Paris" class="city1_item">Paris</option>
+                                    <option value="Tehran" class="city1_item">Tehran</option>
+                                    <option value="New York" class="city1_item">New York</option>
+                                    <option value="Berlin" class="city1_item">Berlin</option>
+                                    <option value="Istanbul" class="city1_item">Istanbul</option>
+                                </select>
+                            </div>
+                            <div class="city1_temp_wrapper">
+                                <p class="city1_temp">26°</p>
+                            </div>
+                        </div>
+                        <div class="city1_WindHum_wrapper city_WindHum_wrapper">
+                            <div class="city1_wind_wrapper">
+                                <span class="city1_windTitle_span city_windTitle_span">
+                                    <i class="bx bx-wind"></i>
+                                    <P class="city1_wind_title city_wind_title">Wind</P>
+                                </span>
+                                <p class="city1_wind_status">22 km/h</p>
+                            </div>
+                            <div class="city1_Hum_wrapper">
+                                <span class="city1_humTitle_span city_humTitle_span">
+                                    <i class="bx bx-droplet"></i>
+                                    <P class="city1_hum_title city_hum_title">Hum</P>
+                                </span>
+                                <p class="city1_Hum_status">10%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="city2_card_wrapper city_card_wrapper">
+                        <div class="city2_weatherStatus_wrapper city_weatherStatus_wrapper">
+                            <div class="city2_cityName_wrapper city_cityName_wrapper" >
+                                <i class="bx bx-map"></i>
+                                <select name="" id="city2_list" class="city_list">
+                                    <option value="Toronto" class="city2_item" >Toronto</option>
+                                    <option value="Tokyo" class="city2_item" selected>Tokyo</option>
+                                    <option value="Chicago" class="city2_item">Chicago</option>
+                                    <option value="Dubai" class="city2_item">Dubai</option>
+                                    <option value="Torento" class="city2_item">Torento</option>
+                                    <option value="Istanbul" class="city2_item">Istanbul</option>
+                                </select>
+                            </div>
+                            <div class="city2_temp_wrapper">
+                                <p class="city2_temp">26°</p>
+                            </div>
+                        </div>
+                        <div class="city2_WindHum_wrapper city_WindHum_wrapper">
+                            <div class="city2_wind_wrapper">
+                                <span class="city2_windTitle_span city_windTitle_span">
+                                    <i class="bx bx-wind"></i>
+                                    <P class="city2_wind_title city_wind_title">Wind</P>
+                                </span>
+                                <p class="city2_wind_status">22 km/h</p>
+                            </div>
+                            <div class="city2_Hum_wrapper">
+                                <span class="city2_humTitle_span city_humTitle_span">
+                                    <i class="bx bx-droplet"></i>
+                                    <P class="city2_hum_title city_hum_title">Hum</P>
+                                </span>
+                                <p class="city2_Hum_status">10%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="image_section">
+                <div class="img_wrapper">
+                    <img src="content/image/city1.jpg" alt="image" class="img">
+                    <div class="image_filter">
+                        <p class="image_title">soheil</p>    
+                        <h1 class="image_des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, temporibus.</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="content/js/theme.js"></script>
+    <script src="content/js/getStatus.js"></script>
+    <script src="content/js/getStatus2.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+</body>
+</html>

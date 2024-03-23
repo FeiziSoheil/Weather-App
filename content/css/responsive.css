@@ -1,0 +1,162 @@
+@media only screen and (max-width: 1400px){
+    .content{
+        /* box-sizing: content-box !important; */
+    }
+    .right_section{
+        width: 45% !important;  
+    }
+    .left_section{
+        width: 70%;
+    }
+    .week_card_wrapper{
+        justify-content: stretch;
+    }
+
+}
+@media only screen and (max-width: 1200px) {
+    .content {
+        flex-direction: column-reverse;
+        padding: 0;
+
+    }
+    .left_section,
+    .right_section{
+        padding:35px;
+        width: 100% !important;
+    }
+    .right_content{
+        display: flex;
+        width: 100%;
+        gap: 20px   ;
+    }
+    .right_footer_wrapper{
+        display:flex ;
+        flex-direction: column;
+    }
+    
+    /* .left_section{
+        padding: 25px;
+    } */
+    .right_main_content{
+        width: 60%;
+    }
+    .right_footer_wrapper{
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 992px) {
+
+}
+@media screen and (max-width:780px) {
+    .right_subCard_wrapper{
+        flex-direction: column;
+    }
+    .right_subcard{
+        flex-direction: row;
+    }
+}
+@media only screen and (max-width: 768px) {
+    *{
+        box-sizing: border-box;
+    }
+    .left_section_bottom{
+        flex-direction: column;
+    }
+    .sunset_sunrise_container{
+        width: 100%;
+        padding: 0;
+    }
+    .sunset_sunrise_content{
+        padding: 10px 20px;
+    }
+    .airQuality_container{
+        height: auto;
+    }
+    .airQuality_status_wrapper{
+        flex-direction: column;
+    }
+    .airQuality_status{
+        margin-bottom: 8px;
+    }
+    .sunset_sunrise_container{
+        margin-bottom: 20px;
+    }
+    .airQuality_btn_refresh{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 678px) {
+    .airQuality_container{
+        width: 100%;
+    }
+    .right_main_content{
+        width: 100%;
+    }
+    .right_content{
+        flex-wrap: wrap;
+    }
+    .right_footer_wrapper{
+        width: 100%;
+    }
+    .week_card_wrapper{
+        flex-wrap: wrap;
+        height: auto;
+        gap: 15px;
+        justify-content: center;
+    }
+    .airQuality_btn_refresh{
+        width: 100%;
+        height: 45px;
+    }
+}
+@media screen and (max-width:450px) {
+    .sunset_sunrise_details{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }    
+    .other_city_wrapper{
+        font-size: 12px;
+    }
+    .first_city_status{
+        padding: 0;
+    }
+    .airQuality_container{
+        padding: 10px;
+    }
+    .sunrise_wrapper{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .header_time{
+        font-size: 35px;
+    }
+    .header_welcome_wrapper{
+        font-size: 18px;
+    }
+    .header_date{
+        margin-top: -5px;
+    }
+    .right_subCard_wrapper  div{
+        font-size: 15px;
+    }
+    .right_subCard_wrapper{
+        flex-direction: column;
+    }
+    .right_subcard{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .week_card {
+        width: 100%;
+        height: 250px;
+    }
+    .img_wrapper {
+        min-width: 393px;
+        height: 300px;
+    }
+}
+@media only screen and (min-width: 600px) {
+
+}
